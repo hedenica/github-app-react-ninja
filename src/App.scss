@@ -33,27 +33,25 @@ img {
 /* estilos */
 
 .App {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 430px;
   padding: 20px;
+  margin: 0 auto;
+  user-select: none;
 
+  .search input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #7423b6ef;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px 0px;
+    font-size: 17px;
+  }
   
   .user-info {
-    width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    .search input {
-      width: 100%;
-      height: 30px;
-      border: 2px solid #7423b6ef;
-      border-radius: 8px;
-      padding: 10px;
-      margin: 20px 0px;
-      font-size: 17px;
-    }
 
     img {
       width: 250px;
@@ -74,6 +72,9 @@ img {
   }
 
   .repos-info, .repos, .starred {
+    display: flex;
+    flex-direction: column;
+    
     height: 100px;
     width: 100%;
     border: 2px solid #7423b6ef;
@@ -93,13 +94,16 @@ img {
   }
 
   .actions {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     button { 
       width: 180px;
       height: 40px;
       padding: 10px;
+      outline: none;
       background-color: #7423b6ef;
       border: none;
       border-radius: 8px;
@@ -114,5 +118,4 @@ img {
       background-color: #ae5bf1ef;
     }
   }
-
 }
